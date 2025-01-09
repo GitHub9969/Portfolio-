@@ -1,0 +1,85 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Example font */
+}
+
+header {
+    background-color: #151111;
+    color: #fff;
+    padding: 20px; /* Adjusted padding */
+}
+
+nav ul {
+    list-style-type: square;
+    font-size: large;
+    padding: 0; /* Reset padding */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; /* Adjusted margin */
+}
+
+nav ul li a {
+    color: rgb(40, 35, 35);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #452121; /* Light coral */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+section {
+    background-color: rgb(117, 79, 79);
+    margin: 20px auto; /* Center section */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Adjust height to auto for responsiveness */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7eefe879;
+    color: white;
+}
+
+/* Hover zoom effect for section headers */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+}
+
+h2:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Project link styles */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Optional hover effect for paragraphs and list items */
+p:hover, ul li:hover {
+   transform: scale(1.05); /* Slight zoom effect */
+}

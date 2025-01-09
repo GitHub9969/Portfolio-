@@ -1,0 +1,447 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Monaco';
+    src: local('Monaco',local('Courier New'),monospace)
+}
+.monaco-text{
+    font-family: 'Monaco','Courier New', monospace;
+    font-size:1 rem;
+    color:#00ff99;
+}
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #737e7e;
+    background-color: #f9f9f9;
+    background-image: url('');
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #3b4446;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header ul li a:hover {
+    color: #5b6e3d;
+}
+
+/* Home Section */
+/* Home Section (Hero) */
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #3b4446, #518b9d); 
+    color: #fff;
+    padding: 1rem;
+}
+
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 
+}
+
+#home h1 span {
+    color: #28dbff; 
+}
+
+#home p {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+}
+
+#home .btn {
+    text-decoration: none;
+    background: #ff5722;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+#home .btn:hover {
+    background: #3ec47d; 
+    color: #fff;
+}
+
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+
+#about {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+#projects {
+    padding: 4rem 0;
+    background-color: #406a9a;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project {
+    background: #394075;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.project p {
+    margin: 0 1rem 1rem;
+    color: #e9e3e3;
+}
+
+.project .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.project .btn:hover {
+    background: #3ec47d;
+
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 150px;
+}
+
+.skill i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+    background: #ebdbd6;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 0.75rem 2rem;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background-color: #2c2726;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff5722;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+/* Global Spacing and Consistency */
+section {
+    padding: 4rem 0; /* Uniform spacing */
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Bold headings */
+    text-align: center;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif; /* Clean text */
+    line-height: 1.8;
+    color: #555;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #3ec47d;
+}
+/* From Uiverse.io by Praashoo7 */ 
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(2.8em) rotate(360deg);
+  }
+  /* From Uiverse.io by eslam-hany */ 
+.card {
+    position: relative;
+    width: calc(100% - 40px); /* Takes full width of the screen minus margins */
+    max-width: 400px; /* Sets a maximum width for larger screens */
+    height: 320px; /* Keeps the height fixed */
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px auto; /* Center-aligns the card horizontally */
+}
+
+/* Styling for the hover effects */
+.card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card:hover:after {
+    content: "😄 HI...";
+}
+.dark-theme {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-theme header, 
+.dark-theme footer {
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+}
+
+.dark-theme a {
+    color: #28dbff;
+}
